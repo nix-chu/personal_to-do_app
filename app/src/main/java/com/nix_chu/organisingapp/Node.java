@@ -11,7 +11,7 @@ public class Node {
     public Task getItem() { return this.item; }
     public Node getLink() { return this.link; }
 
-    public void setNext(Node node) {
+    public void setLink(Node node) {
         this.link = node;
     }
 }
