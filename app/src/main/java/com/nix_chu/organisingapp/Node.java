@@ -2,16 +2,16 @@ package com.nix_chu.organisingapp;
 
 public class Node {
     private Task item;
-    private Node next;
+    private Node link;
 
     Node(Task task) {
         this.item = task;
     }
 
     public Task getItem() { return this.item; }
-    public Node getNext() { return this.next; }
+    public Node getLink() { return this.link; }
 
     public void setNext(Node node) {
-        this.next = node;
+        this.link = node;
     }
 }
