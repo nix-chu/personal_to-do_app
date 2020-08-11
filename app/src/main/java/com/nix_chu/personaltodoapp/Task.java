@@ -1,4 +1,4 @@
-package com.nix_chu.organisingapp;
+package com.nix_chu.personaltodoapp;
 
 import java.util.Date;
 

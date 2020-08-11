@@ -1,4 +1,4 @@
-package com.nix_chu.organisingapp;
+package com.nix_chu.personaltodoapp;
 
 public class TodoList {
     private final String name = "To Do List"; // TODO: Update name for different types of lists
