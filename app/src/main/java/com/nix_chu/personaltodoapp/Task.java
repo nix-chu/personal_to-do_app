@@ -3,10 +3,10 @@ package com.nix_chu.organisingapp;
 import java.util.Date;
 
 public class Task {
-    private final String name;
-    private final Date date;
-    private final String description;
-    private final String location;
+    private String name;
+    private Date date;
+    private String description;
+    private String location;
 
     private Task(Builder builder) {
         this.name = builder.name;
