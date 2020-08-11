@@ -20,6 +20,12 @@ public class Task {
     public String getDescription() { return this.description; }
     public String getLocation() { return this.location; }
 
+    // When user updates a task's info
+    public void setName(String name) { this.name = name; }
+    public void setDate(int date) { this.date = new Date(); }
+    public void setDescription(String description) {this.description = description; }
+    public void setLocation(String location) { this.location = location; }
+
     public static class Builder {
         // Creates an instance of Task which takes optional arguments
         private String name; // required
@@ -27,7 +33,7 @@ public class Task {
         private String description;
         private String location;
 
-        public Builder(String name) {
+        public Builder(final String name) {
             // All required attributes
             this.name = name;
         }
@@ -44,7 +50,7 @@ public class Task {
 
         public Builder location(final String location) {
             this.location = location;
-            return location;
+            return this;
         }
 
         public Task build() {
